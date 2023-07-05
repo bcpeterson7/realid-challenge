@@ -3,8 +3,9 @@
 
 It’s based on Vite so the commands to spool up the dev environment are:
 ```
-npm run dev
+npm run dev      // Server runs on http://localhost:5173/
 npm run build
+npm run preview  // Server runs the build /dist on http://localhost:4173/
 ```
 I recreated both the credit-checks and eviction-reports pages. When you first load the project it loads the homepage so you’ll need to navigate to those pages. I did use Formik + Yup to implement some really basic validation on the credit check form. When submitted the form will validate and if successful alert an object with the field data.
 
