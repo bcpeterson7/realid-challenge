@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  padding: 20px 0;
+  position: relative;
+}
+.header.header__eviction-reports {
+  padding: 0px 0 40px;
+}
+
+.header .site-logo {
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 222px;
+  vertical-align: middle;
+}
+
+.header.header__eviction-reports .site-logo {
+  margin-top: 40px;
+}

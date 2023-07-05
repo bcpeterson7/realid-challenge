@@ -1,0 +1,12 @@
+section.error-404 {
+  background-color: #f9f1ff;
+}
+
+#error-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  text-align: center;
+}

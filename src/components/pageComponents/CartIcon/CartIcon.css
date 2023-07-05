@@ -1,0 +1,28 @@
+a.cartIcon {
+  background: transparent url(./images/cart-icon.jpg) 0 3px no-repeat;
+  display: inline-block;
+  line-height: 50px;
+  width: 45px;
+  vertical-align: middle;
+  margin-right: 10px;
+  position: relative;
+  border-radius: 50px;
+}
+
+a.cartIcon > span.cart-text- {
+  opacity: 0;
+}
+
+a.cartIcon .cart-count {
+  position: absolute;
+  top: -8px;
+  right: -2px;
+  background-color: white;
+  min-width: 26px;
+  height: 26px;
+  border-radius: 20px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 23px;
+  border: 2px solid #1abc9c;
+}

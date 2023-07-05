@@ -1,0 +1,68 @@
+.header nav {
+  max-height: none;
+  width: calc(100% - 230px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.credit-checks-page .header nav {
+  width: calc(100% - 300px);
+  margin-right: 20px;
+}
+
+.header ul.menu {
+  text-align: right;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header.header__eviction-reports ul.menu {
+  margin-top: 90px;
+}
+
+.header ul.menu li {
+  display: inline-block;
+}
+
+.header ul.menu li a {
+  padding: 20px 15px;
+  color: #3d155f;
+}
+
+.header ul.menu li:last-child a {
+  padding-right: 0;
+}
+
+.header ul.menu li a:hover {
+  color: #1abc9c;
+}
+
+.header .menu-icon {
+  display: none;
+}
+
+/* Mobile Nav Opener */
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  height: 100vh;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}

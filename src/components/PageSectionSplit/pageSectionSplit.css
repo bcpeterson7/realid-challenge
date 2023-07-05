@@ -1,0 +1,17 @@
+.tenant-screening .contents .tenant-left {
+  order: 1;
+}
+.tenant-screening .contents .tenant-right {
+  order: 2;
+}
+
+@media screen and (max-width: 1180px) {
+  .tenant-screening .contents .tenant-left.has-image,
+  .tenant-screening .contents .tenant-right.has-image {
+    order: 1;
+  }
+  .tenant-screening .contents .tenant-left.has-text,
+  .tenant-screening .contents .tenant-right.has-text {
+    order: 2;
+  }
+}

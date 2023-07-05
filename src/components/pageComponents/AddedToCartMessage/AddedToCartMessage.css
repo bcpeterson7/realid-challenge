@@ -1,0 +1,63 @@
+.added-to-cart-message {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms, transform 300ms;
+  position: absolute;
+  width: calc(100% - 24px);
+  z-index: 2;
+  box-sizing: border-box;
+  border: 4px solid #1abc9c;
+}
+
+.added-to-cart-message.show {
+  opacity: 1;
+  visibility: visible;
+  animation: slideDown 300ms;
+  transition: opacity 300ms, transform 300ms;
+}
+
+.pricing .added-to-cart-message p {
+  margin: 1rem;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fadeout-animation {
+  position: relative;
+}
+
+.fadeout-animation.show .added-to-cart-message {
+  animation: fadeOut 1s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.added-to-cart-message {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s;
+}
+
+.added-to-cart-message.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.added-to-cart-message.fadeout {
+  opacity: 0;
+  transition: opacity 1s;
+}
